@@ -2,19 +2,29 @@ package BuildComputer;
 
 public class Case {
 
+    //width, depth, height
 
+    private String manufacture;
     private int numberFans;
-    private String manufacturer;
-    private String caseType;
+    private String casetype;
     private Dimension dimension;
+    //    private double width;
+//    private double depth;
+//    private double height;
 
-    public Case(String m, int nf, String ct, Dimension d) {
-        this.numberFans = nf;
-        this.manufacturer = ct;
-        this.dimension = d;
-        this.caseType = m;
-        this.numberFans = 0;
+    public Case(String manufacture, int numberFans, String casetype, Dimension dimension) {
+        this.manufacture = manufacture;
+        this.numberFans = numberFans;
+        this.casetype = casetype;
+        this.dimension = dimension;
+    }
 
+    public String getManufacture() {
+        return manufacture;
+    }
+
+    public void setManufacture(String manufacture) {
+        this.manufacture = manufacture;
     }
 
     public int getNumberFans() {
@@ -25,20 +35,12 @@ public class Case {
         this.numberFans = numberFans;
     }
 
-    public String getManufacturer() {
-        return manufacturer;
+    public String getCasetype() {
+        return casetype;
     }
 
-    public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
-    }
-
-    public String getCaseType() {
-        return caseType;
-    }
-
-    public void setCaseType(String caseType) {
-        this.caseType = caseType;
+    public void setCasetype(String casetype) {
+        this.casetype = casetype;
     }
 
     public Dimension getDimension() {

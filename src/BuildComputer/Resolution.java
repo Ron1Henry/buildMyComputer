@@ -1,7 +1,7 @@
 package BuildComputer;
 
 public class Resolution {
-
+    //height and width
     private int height;
     private int width;
 
@@ -24,5 +24,9 @@ public class Resolution {
 
     public void setWidth(int width) {
         this.width = width;
+    }
+
+    public String toString(){
+        return height + " x " + width;
     }
 }

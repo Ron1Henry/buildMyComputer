@@ -1,41 +1,52 @@
 package BuildComputer;
 
 public class Dimension {
-    private int width;
-    private int height;
-    private int depth;
+    private double width;
+    private double height;
+    private double depth;
 
-    public Dimension(int width, int height) {
+    public Dimension(double width, double depth){
         this.width = width;
-        this.height = height;
+        this.depth= depth;
     }
-    public Dimension(int width, int height, int depth) {
+
+    public Dimension(double width, double height, double depth) {
         this.width = width;
         this.height = height;
         this.depth = depth;
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(double width) {
         this.width = width;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
-    public int getDepth() {
+    public double getDepth() {
         return depth;
     }
 
-    public void setDepth(int depth) {
+    public void setDepth(double depth) {
         this.depth = depth;
     }
+
+    public String toString(){
+        if(height == 0.0){
+            return width + " x " + height;
+        }
+        else {
+            return width + " x " + height + " x " + depth;
+        }
+    }
+
 }
